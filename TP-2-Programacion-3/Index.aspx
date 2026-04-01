@@ -1,0 +1,28 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="TP_2_Programacion_3.Index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <link href="Ejercicio1StyleSheet.css" rel="stylesheet" />
+        <title>Ejercicio 1</title>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <div id="mensaje">
+                <asp:Label ID="labelMensaje" runat="server" BackColor="Red" Font-Bold="False" ForeColor="White"></asp:Label>
+            </div>
+
+            <div class="input-producto-1">
+                <asp:Label ID="labelNombre1" runat="server" Text="Ingrese el nombre del producto:"></asp:Label>
+                <asp:TextBox ID="textBoxProducto1" runat="server"></asp:TextBox>
+                <asp:Label ID="labelCantidad1" runat="server" Text="Cantidad:"></asp:Label>
+                <asp:TextBox ID="textBoxCantidad1" runat="server"></asp:TextBox>
+            </div>
+
+            <div>
+                <asp:Button ID="btnGenerarTabla" runat="server" OnClick="btnGenerarTabla_Click" Text="Generar tabla" />
+            </div>
+        </form>
+    </body>
+</html>
