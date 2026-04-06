@@ -7,19 +7,8 @@
         <link href="Ejercicio1StyleSheet.css" rel="stylesheet" />
         <title>Ejercicio 1</title>
         <style type="text/css">
-            .auto-style2 {
-                width: 721px;
-            }
-            .auto-style3 {
-                width: 888px;
-            }
-            .auto-style4 {
-                width: 721px;
-                height: 23px;
-            }
-            .auto-style5 {
-                width: 888px;
-                height: 23px;
+            .auto-style6 {
+                height: 39px;
             }
         </style>
     </head>
@@ -54,16 +43,16 @@
                         <th class="col-cant">Cantidad</th>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td id="tablaTextBoxProducto1" runat="server" accesskey="tablaTextBoxProducto1"></td>
+                        <td id="tablaTextBoxCantidad1" runat="server"></td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td id="tablaTextBoxProducto2" runat="server"></td>
+                        <td id="tablaTextBoxCantidad2" runat="server"></td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td id="tablaTextBoxTotal" runat="server"></td>
+                        <td id="tablaTextBoxTotal2" runat="server"></td>
                     </tr>
                 </table>
             </div>

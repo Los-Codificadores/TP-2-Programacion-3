@@ -44,11 +44,27 @@ namespace TP_2_Programacion_3
             // No chequea si el string es un int válido
             cantidad1 = int.Parse(textBoxCantidad1.Text);
 
-            producto2 = TextBoxProducto2.Text;
+            // Se accede a la tabla como si fuese una matriz.
+            tableproduct.Rows[1].Cells[0].InnerText = producto1;
+            tableproduct.Rows[1].Cells[1].InnerText = cantidad1.ToString();
 
+
+            // Producto 2
+            producto2 = TextBoxProducto2.Text;
             cantidad2 = int.Parse(TextBoxCantidad2.Text);
 
+            tableproduct.Rows[2].Cells[0].InnerText = producto2;
+            tableproduct.Rows[2].Cells[1].InnerText = cantidad2.ToString();
+
+
+
+
+
+            // Total
             tableproduct.Visible = true;
+            tableproduct.Rows[3].Cells[0].InnerText = "Total: ";
+            tableproduct.Rows[3].Cells[1].InnerText = (cantidad1 + cantidad2).ToString();
+
 
         }
     }
