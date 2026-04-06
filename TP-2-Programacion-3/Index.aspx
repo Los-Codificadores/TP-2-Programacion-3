@@ -57,7 +57,7 @@
                 </table>
             </div>
             <p>
-                <asp:Button ID="btnReiniciarTabla" runat="server" OnClick="btnReiniciarTabla_Click" Text="Reiniciar tabla" Width="111px" />
+                <asp:Button ID="btnReiniciarTabla" runat="server" OnClick="btnReiniciarTabla_Click" Text="Reiniciar tabla" Width="111px" Visible ="false" />
             </p>
         </form>
     </body>

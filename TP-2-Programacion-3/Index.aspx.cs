@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace TP_2_Programacion_3
@@ -19,16 +20,26 @@ namespace TP_2_Programacion_3
 
         protected void btnReiniciarTabla_Click(object sender, EventArgs e)
         {
-            tableproduct.Rows[1].Cells[0].InnerText = "";
-            tableproduct.Rows[1].Cells[1].InnerText = "";
+            for (int i = 1; i < tableproduct.Rows.Count; i++)
+            {
+                foreach (HtmlTableCell celda in tableproduct.Rows[i].Cells)
+                {
+                    celda.InnerText = "";
+                }
+            }
 
-            tableproduct.Rows[2].Cells[0].InnerText = "";
-            tableproduct.Rows[2].Cells[1].InnerText = "";
+            int ultimaFila = tableproduct.Rows.Count - 1;
+            tableproduct.Rows[ultimaFila].Cells[0].InnerText = "TOTAL:";
 
-            tableproduct.Visible = true;
-            tableproduct.Rows[3].Cells[0].InnerText = "Total: ";
-            tableproduct.Rows[3].Cells[1].InnerText = "";
+            ///Borramos el contenido de las text box
+            var textBoxes = new List<TextBox> { textBoxProducto1, textBoxCantidad1, TextBoxProducto2, TextBoxCantidad2 };
+            
+            foreach (TextBox textBox in textBoxes)
+            {
+                textBox.Text = "";
+            }
 
+            btnReiniciarTabla.Visible = false;
             tableproduct.Visible = false;
         }
 
@@ -63,7 +74,6 @@ namespace TP_2_Programacion_3
             tableproduct.Rows[1].Cells[0].InnerText = producto1;
             tableproduct.Rows[1].Cells[1].InnerText = cantidad1.ToString();
 
-
             // Producto 2
             producto2 = TextBoxProducto2.Text;
             cantidad2 = int.Parse(TextBoxCantidad2.Text);
@@ -71,16 +81,12 @@ namespace TP_2_Programacion_3
             tableproduct.Rows[2].Cells[0].InnerText = producto2;
             tableproduct.Rows[2].Cells[1].InnerText = cantidad2.ToString();
 
-
-
-
-
             // Total
-            tableproduct.Visible = true;
             tableproduct.Rows[3].Cells[0].InnerText = "Total: ";
             tableproduct.Rows[3].Cells[1].InnerText = (cantidad1 + cantidad2).ToString();
 
-
+            tableproduct.Visible = true;
+            btnReiniciarTabla.Visible = true;
         }
     }
 }
