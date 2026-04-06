@@ -17,6 +17,21 @@ namespace TP_2_Programacion_3
             
         }
 
+        protected void btnReiniciarTabla_Click(object sender, EventArgs e)
+        {
+            tableproduct.Rows[1].Cells[0].InnerText = "";
+            tableproduct.Rows[1].Cells[1].InnerText = "";
+
+            tableproduct.Rows[2].Cells[0].InnerText = "";
+            tableproduct.Rows[2].Cells[1].InnerText = "";
+
+            tableproduct.Visible = true;
+            tableproduct.Rows[3].Cells[0].InnerText = "Total: ";
+            tableproduct.Rows[3].Cells[1].InnerText = "";
+
+            tableproduct.Visible = false;
+        }
+
         private bool VerificarCamposVacios (string mensaje, Label labelmensaje, TextBox textProducto, TextBox textCantidad)
         {
             if (string.IsNullOrWhiteSpace(textProducto.Text) || string.IsNullOrWhiteSpace(textCantidad.Text))
