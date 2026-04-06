@@ -8,3 +8,27 @@
 #mensaje {
     margin-bottom: 20px;
 }
+
+.tabla-ejercicio th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+    background-color: #eee;
+}
+
+.col-prod {
+    width: 200px;
+}
+
+.col-cant {
+    width: 100px;
+}
+
+.tabla-ejercicio td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
