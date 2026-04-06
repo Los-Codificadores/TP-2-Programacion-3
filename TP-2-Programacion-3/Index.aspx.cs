@@ -17,19 +17,24 @@ namespace TP_2_Programacion_3
             
         }
 
+        private bool VerificarCamposVacios (string mensaje, Label labelmensaje, TextBox textProducto, TextBox textCantidad)
+        {
+            if (string.IsNullOrWhiteSpace(textProducto.Text) || string.IsNullOrWhiteSpace(textCantidad.Text))
+            {
+                labelmensaje.Text = mensaje;
+                return true;
+            }
+            return false;
+        }
+
         protected void btnGenerarTabla_Click(object sender ,EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBoxProducto1.Text)|| string.IsNullOrWhiteSpace(textBoxCantidad1.Text))
+            bool producto1Incompleto = VerificarCamposVacios("[ERROR] Producto N°1 incompleto: Ingrese un nombre de producto y cantidad para agregar a la lista.", labelMensaje, textBoxProducto1, textBoxCantidad1);
+            bool producto2Incompleto = VerificarCamposVacios("[ERROR] Producto N°2 incompleto: Ingrese un nombre de producto y cantidad para agregar a la lista.", labelMensaje, TextBoxProducto2, TextBoxCantidad2);
+
+            if (producto1Incompleto || producto2Incompleto)
             {
-                labelMensaje.Text = "[ERROR] Producto N°1 incompleto: Ingrese un nombre de producto y cantidad para agregar a la lista.";
-
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(TextBoxProducto2.Text) || string.IsNullOrWhiteSpace(TextBoxCantidad2.Text))
-            {
-                labelMensaje.Text = "[ERROR] Producto N°2 incompleto: Ingrese un nombre de producto y cantidad para agregar a la lista.";
-
+                tableproduct.Visible = false;
                 return;
             }
 
@@ -42,6 +47,8 @@ namespace TP_2_Programacion_3
             producto2 = TextBoxProducto2.Text;
 
             cantidad2 = int.Parse(TextBoxCantidad2.Text);
+
+            tableproduct.Visible = true;
 
         }
     }

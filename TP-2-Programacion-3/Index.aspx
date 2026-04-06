@@ -6,6 +6,22 @@
     <head runat="server">
         <link href="Ejercicio1StyleSheet.css" rel="stylesheet" />
         <title>Ejercicio 1</title>
+        <style type="text/css">
+            .auto-style2 {
+                width: 721px;
+            }
+            .auto-style3 {
+                width: 888px;
+            }
+            .auto-style4 {
+                width: 721px;
+                height: 23px;
+            }
+            .auto-style5 {
+                width: 888px;
+                height: 23px;
+            }
+        </style>
     </head>
     <body>
         <form id="form1" runat="server">
@@ -28,7 +44,28 @@
                 <asp:TextBox ID="TextBoxCantidad2" runat="server"></asp:TextBox>
             </div>
             <div>
-                <asp:Button ID="btnGenerarTabla" runat="server" OnClick="btnGenerarTabla_Click" Text="Generar tabla" />
+                <asp:Button ID="btnGenerarTabla" runat="server" OnClick="btnGenerarTabla_Click" Text="Generar tabla" Height="27px" />
+            </div>
+            <div>
+                <br />
+                <table id="tableproduct" runat="server" border="1" class="tabla-ejercicio" visible ="false">
+                    <tr>
+                        <th class="col-prod">Producto</th>
+                        <th class="col-cant">Cantidad</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
             </div>
         </form>
     </body>
