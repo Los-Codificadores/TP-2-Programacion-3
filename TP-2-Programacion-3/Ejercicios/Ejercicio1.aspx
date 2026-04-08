@@ -22,7 +22,7 @@
                 <asp:Label ID="labelNombre1" runat="server" Text="Ingrese el nombre del producto:"></asp:Label>
                 <asp:TextBox ID="textBoxProducto1" runat="server"></asp:TextBox>
                 <asp:Label ID="labelCantidad1" runat="server" Text="Cantidad:"></asp:Label>
-                <asp:TextBox ID="textBoxCantidad1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="textBoxCantidad1" runat="server" TextMode="Number"></asp:TextBox>
                 <br />
                 
             </div>
@@ -30,7 +30,7 @@
                 <asp:Label ID="LabelNombre2" runat="server" Text="Ingrese el nombre del producto:"></asp:Label>
                 <asp:TextBox ID="TextBoxProducto2" runat="server"></asp:TextBox>
                 <asp:Label ID="LabelCantidad2" runat="server" Text="Cantidad:"></asp:Label>
-                <asp:TextBox ID="TextBoxCantidad2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBoxCantidad2" runat="server" TextMode="Number"></asp:TextBox>
             </div>
             <div>
                 <asp:Button ID="btnGenerarTabla" runat="server" OnClick="btnGenerarTabla_Click" Text="Generar tabla" Height="27px" />

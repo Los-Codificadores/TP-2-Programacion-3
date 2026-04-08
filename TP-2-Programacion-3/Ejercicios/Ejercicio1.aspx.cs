@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
+using System.Text.RegularExpressions;
 
 namespace TP_2_Programacion_3
 {
@@ -52,11 +53,25 @@ namespace TP_2_Programacion_3
             }
             return false;
         }
-
-        protected void btnGenerarTabla_Click(object sender ,EventArgs e)
+        private bool VerificarNombresInvalidos(string mensaje, Label labelmensaje, TextBox textProducto, TextBox textCantidad)
         {
-            bool producto1Incompleto = VerificarCamposVacios("[ERROR] Producto N°1 incompleto: Ingrese un nombre de producto y cantidad para agregar a la lista.", labelMensaje, textBoxProducto1, textBoxCantidad1);
-            bool producto2Incompleto = VerificarCamposVacios("[ERROR] Producto N°2 incompleto: Ingrese un nombre de producto y cantidad para agregar a la lista.", labelMensaje, TextBoxProducto2, TextBoxCantidad2);
+            if (!Regex.IsMatch(textProducto.Text, @"^[a-zA-Z\s]+$"))
+            {
+                labelmensaje.Text = mensaje;
+                return true;
+            }
+            return false;
+        }
+        protected void btnGenerarTabla_Click(object sender, EventArgs e)
+        {
+
+            bool producto1Incompleto = VerificarNombresInvalidos("[ERROR] Producto N°1 invalido: Ingrese un nombre de producto y cantidad para agregar a la lista.", labelMensaje, textBoxProducto1, textBoxCantidad1)
+                                    || VerificarCamposVacios("[ERROR] Producto N°1 incompleto: Ingrese un nombre de producto y cantidad para agregar a la lista.", labelMensaje, textBoxProducto1, textBoxCantidad1);
+
+            bool producto2Incompleto = VerificarNombresInvalidos("[ERROR] Producto N°2 invalido: Ingrese un nombre de producto y cantidad para agregar a la lista.", labelMensaje, TextBoxProducto2, TextBoxCantidad2)
+                                    || VerificarCamposVacios("[ERROR] Producto N°2 incompleto: Ingrese un nombre de producto y cantidad para agregar a la lista.", labelMensaje, TextBoxProducto2, TextBoxCantidad2);
+
+            producto2Incompleto = VerificarCamposVacios("[ERROR] Producto N°2 incompleto: Ingrese un nombre de producto y cantidad para agregar a la lista.", labelMensaje, TextBoxProducto2, TextBoxCantidad2);
 
             if (producto1Incompleto || producto2Incompleto)
             {
