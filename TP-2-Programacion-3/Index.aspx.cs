@@ -16,12 +16,12 @@ namespace TP_2_Programacion_3
 
         protected void LinkButtonEjercicio1_Click(object sender ,EventArgs e)
         {
-            Response.Redirect("Ejercicio1.aspx");
+            Response.Redirect("Ejercicios/Ejercicio1.aspx");
         }
 
         protected void LinkButtonEjercicio2_Click(object sender ,EventArgs e)
         {
-            Response.Redirect("Ejercicio2.aspx");
+            Response.Redirect("Ejercicios/Ejercicio2a.aspx");
         }
     }
 }

@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace TP_2_Programacion_3
+namespace TP_2_Programacion_3.Ejercicios
 {
-    public partial class Ejercicio2 : System.Web.UI.Page
+    public partial class Ejercicio2b : System.Web.UI.Page
     {
         protected void Page_Load(object sender ,EventArgs e)
         {
