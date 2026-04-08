@@ -16,7 +16,10 @@ namespace TP_2_Programacion_3.Ejercicios
 
         protected void ButtonResumen_Click(object sender ,EventArgs e)
         {
-            Response.Redirect("Ejercicio2b.aspx");
+            string nombre = txtNombre.Text;
+            string apellido = txtApellido.Text;
+
+            Response.Redirect("Ejercicio2b.aspx?nombre=" + nombre + "&apellido=" + apellido);
         }
     }
 }
