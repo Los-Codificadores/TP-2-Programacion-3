@@ -32,7 +32,7 @@
                     <td class="auto-style4">
                         <asp:TextBox ID="txtNombre" runat="server" style="margin-left: 0px"></asp:TextBox>
                     </td>
-                    <td class="auto-style3"></td>
+                    <td class="auto-style3">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
@@ -44,9 +44,31 @@
                     <td class="auto-style3"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style2"></td>
-                    <td class="auto-style4"></td>
-                    <td class="auto-style3"></td>
+                    <td class="auto-style2">Ciudad</td>
+                    <td class="auto-style4">
+                        <asp:DropDownList ID="dropDownListCiudades" runat="server">
+                            <asp:ListItem Value="Zona Norte">Gral. Pacheco</asp:ListItem>
+                            <asp:ListItem Value="Zona Oeste">San Miguel</asp:ListItem>
+                            <asp:ListItem Value="Zona Sur">Boedo</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Temas:</td>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:CheckBoxList ID="checkBoxTemas" runat="server">
+                            <asp:ListItem>Ciencias</asp:ListItem>
+                            <asp:ListItem>Literatura</asp:ListItem>
+                            <asp:ListItem>Historia</asp:ListItem>
+                        </asp:CheckBoxList>
+                    </td>
+                    <td class="auto-style3">&nbsp;</td>
                 </tr>
             </table>
 
