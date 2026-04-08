@@ -60,6 +60,24 @@ namespace TP_2_Programacion_3.Ejercicios
         protected global::System.Web.UI.WebControls.TextBox txtApellido;
 
         /// <summary>
+        /// Control dropDownListCiudades.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dropDownListCiudades;
+
+        /// <summary>
+        /// Control checkBoxTemas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList checkBoxTemas;
+
+        /// <summary>
         /// Control ButtonResumen.
         /// </summary>
         /// <remarks>
