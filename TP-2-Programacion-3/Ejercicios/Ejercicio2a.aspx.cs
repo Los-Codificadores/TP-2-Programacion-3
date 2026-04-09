@@ -30,7 +30,8 @@ namespace TP_2_Programacion_3.Ejercicios
                 return;
             }
 
-            Response.Redirect("Ejercicio2b.aspx?nombre=" + nombre + "&apellido=" + apellido);
+            Server.Transfer("Ejercicio2b.aspx");
+            
         }
 
         protected bool validarCampoDeTexto(string campo, Label labelError, string mensajeError)
