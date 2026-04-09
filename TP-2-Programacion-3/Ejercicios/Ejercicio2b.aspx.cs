@@ -27,6 +27,12 @@ namespace TP_2_Programacion_3.Ejercicios
             apellido = ((TextBox)PreviousPage.FindControl("txtApellido")).Text;
             ciudadElegida = ((DropDownList)PreviousPage.FindControl("dropDownListCiudades")).SelectedItem.Text;
 
+
+            tablaNombre.InnerText = nombre;
+            tablaApellido.InnerText = apellido;
+            tablaZona.InnerText = ciudadElegida;
+
+            labelTemas.Text = string.Join("<br /> ", temasSeleccionados);
         }
     }
 }
