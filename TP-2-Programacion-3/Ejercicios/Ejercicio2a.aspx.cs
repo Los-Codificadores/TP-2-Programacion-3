@@ -25,7 +25,7 @@ namespace TP_2_Programacion_3.Ejercicios
             bool validacionTemas = validarSeleccionCheckBoxList(checkBoxTemas, LabelErrorTemas, "*Debe seleccionar al menos un tema");
 
 
-            if (!validacionNombre && !validacionApellido && !validacionTemas)
+            if (!validacionNombre || !validacionApellido || !validacionTemas)
             {
                 return;
             }
@@ -38,7 +38,7 @@ namespace TP_2_Programacion_3.Ejercicios
             //le quito todos los espacios en blanco
             string campoSinEspacios = campo.Trim();
 
-            if (string.IsNullOrEmpty(campoSinEspacios)) // le pongo trim para que no deje espacios en blanco
+            if (string.IsNullOrEmpty(campoSinEspacios))
             {
                 labelError.Text = mensajeError;
                 return false;
