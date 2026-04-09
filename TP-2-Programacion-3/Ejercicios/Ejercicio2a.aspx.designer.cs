@@ -42,6 +42,15 @@ namespace TP_2_Programacion_3.Ejercicios
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
 
         /// <summary>
+        /// Control LabelErrorNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelErrorNombre;
+
+        /// <summary>
         /// Control LabelApellido.
         /// </summary>
         /// <remarks>
@@ -60,6 +69,15 @@ namespace TP_2_Programacion_3.Ejercicios
         protected global::System.Web.UI.WebControls.TextBox txtApellido;
 
         /// <summary>
+        /// Control LabelErrorApellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelErrorApellido;
+
+        /// <summary>
         /// Control dropDownListCiudades.
         /// </summary>
         /// <remarks>
@@ -76,6 +94,15 @@ namespace TP_2_Programacion_3.Ejercicios
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList checkBoxTemas;
+
+        /// <summary>
+        /// Control LabelErrorTemas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelErrorTemas;
 
         /// <summary>
         /// Control ButtonResumen.

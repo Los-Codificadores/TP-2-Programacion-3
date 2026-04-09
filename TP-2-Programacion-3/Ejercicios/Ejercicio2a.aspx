@@ -32,7 +32,9 @@
                     <td class="auto-style4">
                         <asp:TextBox ID="txtNombre" runat="server" style="margin-left: 0px"></asp:TextBox>
                     </td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Label ID="LabelErrorNombre" runat="server" Font-Bold="True" ForeColor="#FF3300"></asp:Label>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
@@ -41,7 +43,9 @@
                     <td class="auto-style4">
                         <asp:TextBox ID="txtApellido" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style3"></td>
+                    <td class="auto-style3">
+                        <asp:Label ID="LabelErrorApellido" runat="server" Font-Bold="True" ForeColor="#FF3300"></asp:Label>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">Ciudad</td>
@@ -68,7 +72,9 @@
                             <asp:ListItem>Historia</asp:ListItem>
                         </asp:CheckBoxList>
                     </td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Label ID="LabelErrorTemas" runat="server" Font-Bold="True" ForeColor="#FF3300"></asp:Label>
+                    </td>
                 </tr>
             </table>
 
