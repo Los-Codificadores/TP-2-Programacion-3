@@ -23,5 +23,10 @@ namespace TP_2_Programacion_3
         {
             Response.Redirect("Ejercicios/Ejercicio2a.aspx");
         }
+
+        protected void LinkButtonEjercicio3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicios/Ejercicio3.aspx");
+        }
     }
 }
