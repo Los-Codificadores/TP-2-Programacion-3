@@ -14,7 +14,12 @@ namespace TP_2_Programacion_3
 
         protected void Page_Load(object sender ,EventArgs e)
         {
-
+            //Tuve que refinir la fuente en la carga, por que si no al modificar
+            //La fuente en el boton, se inicializa con basura.
+            if (!IsPostBack)
+            {
+                lblResultado.Font.Size = FontUnit.Point(16);
+            }
         }
 
         protected void LinkButtonColorTexto_Click(object sender ,EventArgs e)
@@ -60,6 +65,25 @@ namespace TP_2_Programacion_3
         protected void colorVerde_Click(object sender, EventArgs e)
         {
             lblResultado.ForeColor = Color.FromArgb(0, 255, 0);
+        }
+
+        protected void buttonPlus_Click(object sender, EventArgs e)
+        {
+            // Es algo confuso, pero necesite convertirlo a int, por que el retorno del font unit es
+            // un float, y el metodo point requiere un int.
+
+            if (lblResultado.Font.Size.Unit.Value < 64)
+            {
+                lblResultado.Font.Size = FontUnit.Point((int)lblResultado.Font.Size.Unit.Value + 2);
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (lblResultado.Font.Size.Unit.Value > 10)
+            {
+                lblResultado.Font.Size = FontUnit.Point((int)lblResultado.Font.Size.Unit.Value - 2);
+            }
         }
     }
 }

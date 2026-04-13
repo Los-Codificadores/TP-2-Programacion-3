@@ -114,6 +114,24 @@ namespace TP_2_Programacion_3
         protected global::System.Web.UI.WebControls.LinkButton Underline;
 
         /// <summary>
+        /// Control buttonMinus.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonMinus;
+
+        /// <summary>
+        /// Control buttonPlus.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonPlus;
+
+        /// <summary>
         /// Control lblResultado.
         /// </summary>
         /// <remarks>

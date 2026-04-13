@@ -57,7 +57,7 @@
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                 </tr>
-                <tr style="padding-top: 20px">
+                <tr>
                     <td colspan="3" class="auto-style4">
                         <asp:LinkButton ID="Bold" runat="server" OnClick="AplicarFormato_Click" Font-Bold="True" Style="font-size: 20px;
                             text-decoration: none; border: 1px solid #ccc; padding: 2px 10px;">B</asp:LinkButton>
@@ -65,6 +65,13 @@
                             text-decoration: none; border: 1px solid #ccc; padding: 2px 10px; margin-left: 5px">I</asp:LinkButton>
                         <asp:LinkButton ID="Underline" runat="server" OnClick="AplicarFormato_Click" Font-Underline="True" Style="font-size: 20px;
                             text-decoration: none; border: 1px solid #ccc; padding: 2px 10px; margin-left: 5px" Font-Bold="False" Font-Overline="False" Font-Strikeout="False">U</asp:LinkButton>
+                    </td>
+                </tr>
+                <tr style="padding-top: 20px">
+                    <td colspan="3" class="auto-style4">
+                        <asp:Button ID="buttonMinus" runat="server" Height="20px" OnClick="Button1_Click" Text="-" Width="20px" />
+&nbsp;
+                        <asp:Button ID="buttonPlus" runat="server" Height="20px" OnClick="buttonPlus_Click" Text="+" Width="20px" />
                     </td>
                 </tr>
                 <tr>
