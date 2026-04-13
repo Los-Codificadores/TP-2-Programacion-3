@@ -25,5 +25,26 @@ namespace TP_2_Programacion_3
 
             lblResultado.ForeColor = Color.FromArgb(r, g, b);
         }
+
+        protected void AplicarFormato_Click(object sender, EventArgs e)
+        {
+            //Con sender sabemos que boton se apreto
+            LinkButton btn = (LinkButton)sender;
+
+            switch (btn.ID)
+            {
+                case "Bold":
+                    lblResultado.Font.Bold = !lblResultado.Font.Bold;
+                    break;
+
+                case "Italic":
+                    lblResultado.Font.Italic = !lblResultado.Font.Italic;
+                    break;
+
+                case "Underline":
+                    lblResultado.Font.Underline = !lblResultado.Font.Underline;
+                    break;
+            }
+        }
     }
 }
