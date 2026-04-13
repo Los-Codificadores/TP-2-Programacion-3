@@ -46,5 +46,20 @@ namespace TP_2_Programacion_3
                     break;
             }
         }
+
+        protected void colorRojo_Click(object sender, EventArgs e)
+        {
+            lblResultado.ForeColor = Color.FromArgb(255, 0, 0);
+        }
+
+        protected void colorAzul_Click(object sender, EventArgs e)
+        {
+            lblResultado.ForeColor = Color.FromArgb(0, 0, 255);
+        }
+
+        protected void colorVerde_Click(object sender, EventArgs e)
+        {
+            lblResultado.ForeColor = Color.FromArgb(0, 255, 0);
+        }
     }
 }

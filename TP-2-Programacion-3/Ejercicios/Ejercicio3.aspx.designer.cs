@@ -33,13 +33,40 @@ namespace TP_2_Programacion_3
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonColorTexto;
 
         /// <summary>
-        /// Control LinkButton2.
+        /// Control labelColor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        protected global::System.Web.UI.WebControls.Label labelColor;
+
+        /// <summary>
+        /// Control colorRojo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton colorRojo;
+
+        /// <summary>
+        /// Control colorAzul.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton colorAzul;
+
+        /// <summary>
+        /// Control colorVerde.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton colorVerde;
 
         /// <summary>
         /// Control LinkButton3.
