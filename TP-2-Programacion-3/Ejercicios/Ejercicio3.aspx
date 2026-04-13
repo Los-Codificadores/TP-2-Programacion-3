@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio3.aspx.cs" Inherits="TP_2_Programacion_3.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio3.aspx.cs" Inherits="TP_2_Programacion_3.Ejercicio3" %>
 
 <!DOCTYPE html>
 
@@ -21,7 +21,7 @@
             <table style="width:100%;">
                 <tr>
                     <td>
-                        <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButtonColorTexto" runat="server" OnClick="LinkButtonColorTexto_Click">Cambiar color del texto</asp:LinkButton>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -49,7 +49,7 @@
                 </tr>
                     </td>
                     <td class="auto-style3">
-                        <asp:Label ID="lblResultado" runat="server" Text="Texto Coloreado"></asp:Label>
+                        <asp:Label ID="lblResultado" runat="server" Text="Texto coloreado"></asp:Label>
                     </td>
                     <td class="auto-style3"></td>
                     <td class="auto-style3"></td>
