@@ -88,6 +88,9 @@
                 </tr>
             </table>
         </div>
+        <p>
+            <asp:Button ID="ButtonReset" runat="server" OnClick="ButtonReset_Click" Text="RESET" />
+        </p>
     </form>
 </body>
 </html>

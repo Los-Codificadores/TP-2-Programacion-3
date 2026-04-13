@@ -12,6 +12,7 @@ namespace TP_2_Programacion_3
     {
         private static readonly Random _random = new Random();
 
+
         protected void Page_Load(object sender ,EventArgs e)
         {
             //Tuve que refinir la fuente en la carga, por que si no al modificar
@@ -20,6 +21,7 @@ namespace TP_2_Programacion_3
             {
                 lblResultado.Font.Size = FontUnit.Point(16);
             }
+
         }
 
         protected void LinkButtonColorTexto_Click(object sender ,EventArgs e)
@@ -84,6 +86,12 @@ namespace TP_2_Programacion_3
             {
                 lblResultado.Font.Size = FontUnit.Point((int)lblResultado.Font.Size.Unit.Value - 2);
             }
+        }
+
+        protected void ButtonReset_Click(object sender, EventArgs e)
+        {
+            lblResultado.ControlStyle.Reset(); //Con esto reseteo el estilo del control, esto no afecta el tamanio de la fuente
+            lblResultado.Font.Size = FontUnit.Point(16);
         }
     }
 }
