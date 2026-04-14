@@ -39,6 +39,7 @@
         <asp:Label ID="label4" runat="server" Text="Los temas elegidos son:" Font-Size="18px"></asp:Label>
         <br />
         <asp:Label ID="labelTemas" runat="server" Font-Bold="True" Text="Label" style="display: block; padding-left: 80px" Font-Size="18px" ></asp:Label>
+        <asp:LinkButton ID="lbReturn" runat="server" Style="margin-left: -60px;" OnClick="lbReturn_Click">Menu Principal</asp:LinkButton>
     </form>
 </body>
 </html>

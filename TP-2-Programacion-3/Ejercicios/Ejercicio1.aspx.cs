@@ -53,6 +53,12 @@ namespace TP_2_Programacion_3
             }
             return false;
         }
+
+        protected void lbReturn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Index.aspx");
+        }
+
         private bool VerificarNombresInvalidos(string mensaje, Label labelmensaje, TextBox textProducto, TextBox textCantidad)
         {
             if (!Regex.IsMatch(textProducto.Text, @"^[a-zA-Z\s]+$"))

@@ -69,22 +69,22 @@ namespace TP_2_Programacion_3
         protected global::System.Web.UI.WebControls.LinkButton colorVerde;
 
         /// <summary>
-        /// Control LinkButton3.
+        /// Control LinkButtonFondoAleatorio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonFondoAleatorio;
 
         /// <summary>
-        /// Control LinkButton4.
+        /// Control ddlBorderStyle.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.DropDownList ddlBorderStyle;
 
         /// <summary>
         /// Control Bold.
@@ -141,15 +141,6 @@ namespace TP_2_Programacion_3
         protected global::System.Web.UI.WebControls.Label lblResultado;
 
         /// <summary>
-        /// Control LinkButton5.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
-
-        /// <summary>
         /// Control ButtonReset.
         /// </summary>
         /// <remarks>
@@ -157,5 +148,14 @@ namespace TP_2_Programacion_3
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonReset;
+
+        /// <summary>
+        /// Control LinkButtonReturn.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonReturn;
     }
 }

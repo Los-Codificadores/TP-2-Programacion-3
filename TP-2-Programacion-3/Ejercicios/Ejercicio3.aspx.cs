@@ -93,5 +93,25 @@ namespace TP_2_Programacion_3
             lblResultado.ControlStyle.Reset(); //Con esto reseteo el estilo del control, esto no afecta el tamanio de la fuente
             lblResultado.Font.Size = FontUnit.Point(16);
         }
+
+        protected void LinkButtonReturn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Index.aspx");
+        }
+
+        protected void LinkButtonFondoAleatorio_Click(object sender, EventArgs e)
+        {
+            int r = _random.Next(1, 256);
+            int g = _random.Next(1, 256);
+            int b = _random.Next(1, 256);
+
+            lblResultado.BackColor = Color.FromArgb(r, g, b);
+        }
+
+        protected void ddlBorderStyle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string Value = ddlBorderStyle.SelectedValue;
+            lblResultado.BorderStyle = (BorderStyle)Enum.Parse(typeof(BorderStyle), Value);
+        }
     }
 }

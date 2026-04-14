@@ -59,6 +59,7 @@
             <p>
                 <asp:Button ID="btnReiniciarTabla" runat="server" OnClick="btnReiniciarTabla_Click" Text="Reiniciar tabla" Width="111px" Visible ="false" />
             </p>
+            <asp:LinkButton ID="lbReturn" runat="server" OnClick="lbReturn_Click">Menu Principal</asp:LinkButton>
         </form>
     </body>
 </html>

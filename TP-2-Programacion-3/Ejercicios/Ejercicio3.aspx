@@ -45,14 +45,24 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:LinkButton ID="LinkButton3" runat="server">LinkButton</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButtonFondoAleatorio" runat="server" OnClick="LinkButtonFondoAleatorio_Click">Color de fondo aleatorio</asp:LinkButton>
                     </td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:LinkButton ID="LinkButton4" runat="server">LinkButton</asp:LinkButton>
+                        <asp:DropDownList ID="ddlBorderStyle" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlBorderStyle_SelectedIndexChanged">
+                            <asp:ListItem Selected="True">None</asp:ListItem>
+                            <asp:ListItem>Dotted</asp:ListItem>
+                            <asp:ListItem>Dashed</asp:ListItem>
+                            <asp:ListItem>Solid</asp:ListItem>
+                            <asp:ListItem>Double</asp:ListItem>
+                            <asp:ListItem>Groove</asp:ListItem>
+                            <asp:ListItem>Ridge</asp:ListItem>
+                            <asp:ListItem>Inset</asp:ListItem>
+                            <asp:ListItem>Outset</asp:ListItem>
+                        </asp:DropDownList>
                     </td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -76,12 +86,12 @@
                 </tr>
                 <tr>
                     <td colspan="3" class="auto-style3">
-                        <asp:Label ID="lblResultado" runat="server" Text="Texto coloreado"></asp:Label>
+                        <asp:Label ID="lblResultado" runat="server" Text="Texto coloreado" BorderStyle="None" style="margin-top: 0px" BorderColor="Black"></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:LinkButton ID="LinkButton5" runat="server">LinkButton</asp:LinkButton>
+            <asp:Button ID="ButtonReset" runat="server" OnClick="ButtonReset_Click" Text="RESET" />
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -89,8 +99,10 @@
             </table>
         </div>
         <p>
-            <asp:Button ID="ButtonReset" runat="server" OnClick="ButtonReset_Click" Text="RESET" />
+                        <asp:LinkButton ID="LinkButtonReturn" runat="server" OnClick="LinkButtonReturn_Click">Menu Principal</asp:LinkButton>
         </p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>

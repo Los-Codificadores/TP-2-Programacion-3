@@ -31,7 +31,7 @@ namespace TP_2_Programacion_3.Ejercicios
             }
 
             Server.Transfer("Ejercicio2b.aspx");
-            
+
         }
 
         protected bool validarCampoDeTexto(string campo, Label labelError, string mensajeError)

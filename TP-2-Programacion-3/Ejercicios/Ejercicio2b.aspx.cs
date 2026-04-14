@@ -11,28 +11,35 @@ namespace TP_2_Programacion_3.Ejercicios
     {
         protected void Page_Load(object sender ,EventArgs e)
         {
-            string nombre, apellido, ciudadElegida;
-            List<string> temasSeleccionados = new List<string>();
+            if (!IsPostBack) { 
+                string nombre, apellido, ciudadElegida;
+                List<string> temasSeleccionados = new List<string>();
 
-            CheckBoxList checkBoxTemas = (CheckBoxList)PreviousPage.FindControl("checkBoxTemas");
-            foreach (ListItem item in checkBoxTemas.Items)
-            {
-                if (item.Selected)
+                CheckBoxList checkBoxTemas = (CheckBoxList)PreviousPage.FindControl("checkBoxTemas");
+                foreach (ListItem item in checkBoxTemas.Items)
                 {
-                    temasSeleccionados.Add(item.Text);
+                    if (item.Selected)
+                    {
+                        temasSeleccionados.Add(item.Text);
+                    }
                 }
+
+                nombre = ((TextBox)PreviousPage.FindControl("txtNombre")).Text;
+                apellido = ((TextBox)PreviousPage.FindControl("txtApellido")).Text;
+                ciudadElegida = ((DropDownList)PreviousPage.FindControl("dropDownListCiudades")).SelectedItem.Text;
+
+
+                tablaNombre.InnerText = nombre;
+                tablaApellido.InnerText = apellido;
+                tablaZona.InnerText = ciudadElegida;
+
+                labelTemas.Text = string.Join("<br /> ", temasSeleccionados);
             }
+        }
 
-            nombre = ((TextBox)PreviousPage.FindControl("txtNombre")).Text;
-            apellido = ((TextBox)PreviousPage.FindControl("txtApellido")).Text;
-            ciudadElegida = ((DropDownList)PreviousPage.FindControl("dropDownListCiudades")).SelectedItem.Text;
-
-
-            tablaNombre.InnerText = nombre;
-            tablaApellido.InnerText = apellido;
-            tablaZona.InnerText = ciudadElegida;
-
-            labelTemas.Text = string.Join("<br /> ", temasSeleccionados);
+        protected void lbReturn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Index.aspx");
         }
     }
 }
