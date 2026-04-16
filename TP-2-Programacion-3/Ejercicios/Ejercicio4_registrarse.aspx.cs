@@ -47,7 +47,7 @@ namespace TP_2_Programacion_3.Ejercicios
             {
                 return;
             }
-
+            
             if (!Regex.IsMatch(passwordInput.Value, patronRegex))
             {
                 LabelMensajePassword.Text = "* La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número.";
@@ -60,7 +60,6 @@ namespace TP_2_Programacion_3.Ejercicios
 
             LabelRegistroExitoso.Text = "Se ha registrado correctamente";
             ButtonVolver.Visible = true;
-
         }
       
         protected void ButtonVolver_Click(object sender, EventArgs e)

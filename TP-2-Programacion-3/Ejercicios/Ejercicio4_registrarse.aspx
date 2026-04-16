@@ -51,8 +51,6 @@
         </div>
         <asp:Label ID="LabelRegistroExitoso" style="color: green; display: block; margin-top: 30px" runat="server"></asp:Label>
         <p>
-            &nbsp;</p>
-        <p>
             <asp:Button ID="ButtonVolver" runat="server" OnClick="ButtonVolver_Click" Visible="false" Text="Volver" />
         </p>
     </form>
