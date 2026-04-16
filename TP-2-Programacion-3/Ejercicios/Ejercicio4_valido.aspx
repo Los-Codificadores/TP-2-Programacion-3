@@ -1,0 +1,15 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio4_valido.aspx.cs" Inherits="TP_2_Programacion_3.Ejercicios.Ejercicio4_valido" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    </form>
+</body>
+</html>

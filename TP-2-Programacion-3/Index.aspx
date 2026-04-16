@@ -16,6 +16,7 @@
             <asp:LinkButton ID="LinkButtonEjercicio1" runat="server" OnClick="LinkButtonEjercicio1_Click">Ejercicio 1</asp:LinkButton>
             <asp:LinkButton ID="LinkButtonEjercicio2" runat="server" OnClick="LinkButtonEjercicio2_Click">Ejercicio 2</asp:LinkButton>
             <asp:LinkButton ID="LinkButtonEjercicio3" runat="server" OnClick="LinkButtonEjercicio3_Click">Ejercicio 3</asp:LinkButton>
+            <asp:LinkButton ID="LinkButtonEjercicio4" runat="server" OnClick="LinkButtonEjercicio4_Click">Ejercicio 4</asp:LinkButton>
         </div>
     </form>
 </body>

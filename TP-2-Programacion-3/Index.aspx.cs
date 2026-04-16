@@ -9,17 +9,17 @@ namespace TP_2_Programacion_3
 {
     public partial class Index : System.Web.UI.Page
     {
-        protected void Page_Load(object sender ,EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void LinkButtonEjercicio1_Click(object sender ,EventArgs e)
+        protected void LinkButtonEjercicio1_Click(object sender, EventArgs e)
         {
             Response.Redirect("Ejercicios/Ejercicio1.aspx");
         }
 
-        protected void LinkButtonEjercicio2_Click(object sender ,EventArgs e)
+        protected void LinkButtonEjercicio2_Click(object sender, EventArgs e)
         {
             Response.Redirect("Ejercicios/Ejercicio2a.aspx");
         }
@@ -27,6 +27,11 @@ namespace TP_2_Programacion_3
         protected void LinkButtonEjercicio3_Click(object sender, EventArgs e)
         {
             Response.Redirect("Ejercicios/Ejercicio3.aspx");
+        }
+
+        protected void LinkButtonEjercicio4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicios/Ejercicio4_login.aspx");
         }
     }
 }
