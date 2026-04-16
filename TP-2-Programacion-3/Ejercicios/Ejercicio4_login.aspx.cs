@@ -12,7 +12,7 @@ namespace TP_2_Programacion_3.Ejercicios
         protected void Page_Load(object sender, EventArgs e)
         {
             Datos.AgregarUsuario("Claudio Default", "12345");
-
+            CampoErrores.InnerText = "";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -24,6 +24,29 @@ namespace TP_2_Programacion_3.Ejercicios
         protected void ButtonLogin_Click(object sender, EventArgs e)
         {
             Response.Redirect("Ejercicio4_login.aspx");
+        }
+
+        protected void ButtonLogin_Click1(object sender, EventArgs e)
+        {
+            //Validamos si los campos no estan vacios:
+            if (InputNombre.Value == "" || InputPass.Value == "") { 
+                CampoErrores.InnerText = "Debe completar ambos campos";
+                return;
+            }
+
+            //Validamos si el usuario existe
+            foreach (var usuario in Datos.GetUsuarios())
+            {
+                if (usuario.getNombre() == InputNombre.Value && usuario.getContraseña() == InputPass.Value)
+                {
+                    CampoErrores.InnerText = "";
+                    Response.Redirect("Ejercicio4_valido.aspx");
+                    return;
+
+                }
+                CampoErrores.InnerText = "Usuario o contraseña incorrectos";
+            }
+            return;
         }
     }
 }

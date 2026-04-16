@@ -7,7 +7,7 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 27%;
+            width: 30%;
             margin-right: 0px;
         }
         .auto-style2 {
@@ -36,16 +36,19 @@
                 <tr>
                     <td class="auto-style5">Nombre de usuario:</td>
                     <td class="auto-style4">
-                        <input id="InputNombre" type="text" /></td>
+                        <input id="InputNombre" type="text" runat="server" /></td>
                 </tr>
                 <tr>
                     <td class="auto-style5">Contraseña:</td>
                     <td class="auto-style4">
-                        <input id="InputPass" type="password" /></td>
+                        <input id="InputPass" type="password" runat="server"/></td>
+                </tr>
+                <tr>
+                    <td class="auto-style5" id="CampoErrores" colspan="2" runat="server" style="text-align: center; color: #FF0000">[CampoErrores]</td>
                 </tr>
                 <tr>
                     <td class="auto-style5" colspan="2" style="vertical-align: middle; text-align: center">
-                        <asp:Button ID="ButtonLogin" runat="server" Text="Login" Width="82px" />
+                        <asp:Button ID="ButtonLogin" runat="server" OnClick="ButtonLogin_Click1" Text="Login" Width="82px" />
                     </td>
                 </tr>
             </table>
