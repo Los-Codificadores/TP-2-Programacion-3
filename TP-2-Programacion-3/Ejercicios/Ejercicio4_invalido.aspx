@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="labelInvalido" runat="server" Font-Size="X-Large" Text="USUARIO INVALIDO INGRESO NO PERMITIDO"></asp:Label>
         </div>
     </form>
 </body>

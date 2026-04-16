@@ -12,6 +12,7 @@ namespace TP_2_Programacion_3.Ejercicios
         protected void Page_Load(object sender, EventArgs e)
         {
             Datos.AgregarUsuario("Claudio Default", "12345");
+            Datos.AgregarUsuario("claudio", "casas");
             CampoErrores.InnerText = "";
         }
 
@@ -39,12 +40,13 @@ namespace TP_2_Programacion_3.Ejercicios
             {
                 if (usuario.getNombre() == InputNombre.Value && usuario.getContraseña() == InputPass.Value)
                 {
+                    Ejercicio4_valido.NombreUsuarioValido = usuario.getNombre();
                     CampoErrores.InnerText = "";
                     Response.Redirect("Ejercicio4_valido.aspx");
                     return;
 
                 }
-                CampoErrores.InnerText = "Usuario o contraseña incorrectos";
+                CampoErrores.InnerText = "Usuario o contraseña invalidos";
             }
             return;
         }

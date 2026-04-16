@@ -9,8 +9,10 @@ namespace TP_2_Programacion_3.Ejercicios
 {
     public partial class Ejercicio4_valido : System.Web.UI.Page
     {
+        public static string NombreUsuarioValido = "";
         protected void Page_Load(object sender ,EventArgs e)
         {
+            labelNombreUsuario.Text = NombreUsuarioValido;
 
         }
     }
