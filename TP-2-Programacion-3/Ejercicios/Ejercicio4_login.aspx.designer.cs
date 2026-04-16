@@ -24,6 +24,15 @@ namespace TP_2_Programacion_3.Ejercicios
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control ButtonLogin.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonLogin;
+
+        /// <summary>
         /// Control Button1.
         /// </summary>
         /// <remarks>

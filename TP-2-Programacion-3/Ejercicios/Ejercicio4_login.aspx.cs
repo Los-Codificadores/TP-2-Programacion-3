@@ -20,5 +20,10 @@ namespace TP_2_Programacion_3.Ejercicios
             Response.Redirect("Ejercicio4_registrarse.aspx");
 
         }
+
+        protected void ButtonLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio4_login.aspx");
+        }
     }
 }
