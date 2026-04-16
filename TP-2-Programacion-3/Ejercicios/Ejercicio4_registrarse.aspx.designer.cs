@@ -33,6 +33,15 @@ namespace TP_2_Programacion_3.Ejercicios
         protected global::System.Web.UI.HtmlControls.HtmlInputText usuarioInput;
 
         /// <summary>
+        /// Control LabelMensajeUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelMensajeUsuario;
+
+        /// <summary>
         /// Control passwordInput.
         /// </summary>
         /// <remarks>
@@ -42,12 +51,39 @@ namespace TP_2_Programacion_3.Ejercicios
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword passwordInput;
 
         /// <summary>
-        /// Control Button1.
+        /// Control LabelMensajePassword.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Label LabelMensajePassword;
+
+        /// <summary>
+        /// Control ButtonRegistrarse.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonRegistrarse;
+
+        /// <summary>
+        /// Control LabelRegistroExitoso.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelRegistroExitoso;
+
+        /// <summary>
+        /// Control ButtonVolver.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonVolver;
     }
 }
