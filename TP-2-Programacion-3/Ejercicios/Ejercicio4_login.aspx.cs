@@ -14,5 +14,11 @@ namespace TP_2_Programacion_3.Ejercicios
             Datos.AgregarUsuario("Claudio Default", "12345");
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio4_registrarse.aspx");
+
+        }
     }
 }
