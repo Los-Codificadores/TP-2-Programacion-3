@@ -24,6 +24,9 @@
         }
         .auto-style5 {
         }
+        .auto-style6 {
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -47,13 +50,18 @@
                     <td class="auto-style5" id="CampoErrores" colspan="2" runat="server" style="text-align: center; color: #FF0000">[CampoErrores]</td>
                 </tr>
                 <tr>
-                    <td class="auto-style5" colspan="2" style="vertical-align: middle; text-align: center">
+                    <td class="auto-style6" colspan="2" style="vertical-align: middle; text-align: center">
                         <asp:Button ID="ButtonLogin" runat="server" OnClick="ButtonLogin_Click1" Text="Login" Width="82px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style5" colspan="2" style="vertical-align: middle; text-align: left; margin-top: 50px; display: block;">
+                        <asp:Label ID="LabelTextoRegistrarse" runat="server" Text="¿Aún no tienes cuenta?"></asp:Label>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Registrate" />
                     </td>
                 </tr>
             </table>
         </div>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Registro" />
     </form>
 </body>
 </html>
