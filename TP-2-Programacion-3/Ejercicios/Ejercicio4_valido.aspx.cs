@@ -15,5 +15,10 @@ namespace TP_2_Programacion_3.Ejercicios
             labelNombreUsuario.Text = NombreUsuarioValido;
 
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio4_login.aspx");
+        }
     }
 }

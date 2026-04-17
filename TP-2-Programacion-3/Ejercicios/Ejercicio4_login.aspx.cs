@@ -9,10 +9,16 @@ namespace TP_2_Programacion_3.Ejercicios
 {
     public partial class Ejercicio4_login : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            Datos.AgregarUsuario("Claudio Default", "12345");
-            Datos.AgregarUsuario("claudio", "casas");
+
+            if (IsPostBack)
+            {
+                InputPass.Attributes["value"] = Request.Form[InputPass.UniqueID];
+            }
+
+            Datos.CargarDatosDePrueba();
             CampoErrores.InnerText = "";
         }
 
@@ -46,9 +52,15 @@ namespace TP_2_Programacion_3.Ejercicios
                     return;
 
                 }
-                CampoErrores.InnerText = "Usuario o contraseña invalidos";
+                //CampoErrores.InnerText = "Usuario o contraseña invalidos";
+                Response.Redirect("Ejercicio4_invalido.aspx");
             }
             return;
+        }
+
+        protected void lbReturn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Index.aspx");
         }
     }
 }

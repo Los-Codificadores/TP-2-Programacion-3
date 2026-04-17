@@ -18,5 +18,13 @@ namespace TP_2_Programacion_3
         {
             return _usuarios;
         }
+
+        public static void CargarDatosDePrueba()
+        {
+            if (_usuarios.Count == 0)
+            {
+                _usuarios.Add(new Usuario("claudio", "casas"));
+            }
+        }
     }
 }

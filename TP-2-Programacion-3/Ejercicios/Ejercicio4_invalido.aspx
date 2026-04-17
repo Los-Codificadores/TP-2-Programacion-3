@@ -11,6 +11,7 @@
         <div>
             <asp:Label ID="labelInvalido" runat="server" Font-Size="X-Large" Text="USUARIO INVALIDO INGRESO NO PERMITIDO"></asp:Label>
         </div>
+        <asp:Button ID="btnReintentar" runat="server" OnClick="btnReintentar_Click" Text="Reintentar" />
     </form>
 </body>
 </html>

@@ -9,9 +9,14 @@ namespace TP_2_Programacion_3.Ejercicios
 {
     public partial class Ejercicio4_invalido : System.Web.UI.Page
     {
-        protected void Page_Load(object sender ,EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnReintentar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio4_login.aspx");
         }
     }
 }

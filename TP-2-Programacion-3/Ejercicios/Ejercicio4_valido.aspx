@@ -12,6 +12,7 @@
             <asp:Label ID="labelValido" runat="server" Font-Size="X-Large" Text="BIENVENID@ A MI PAGINA Sr/Sra   "></asp:Label>
             <asp:Label ID="labelNombreUsuario" runat="server" Font-Size="X-Large" Text="Claudio"></asp:Label>
         </div>
+        <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
     </form>
 </body>
 </html>

@@ -47,7 +47,8 @@
                         <input id="InputPass" type="password" runat="server"/></td>
                 </tr>
                 <tr>
-                    <td class="auto-style5" id="CampoErrores" colspan="2" runat="server" style="text-align: center; color: #FF0000">[CampoErrores]</td>
+                    <td class="auto-style5" id="CampoErrores" colspan="2" runat="server" style="text-align: center; color: #FF0000">
+                        [CampoErrores]</td>
                 </tr>
                 <tr>
                     <td class="auto-style6" colspan="2" style="vertical-align: middle; text-align: center">
@@ -62,6 +63,7 @@
                 </tr>
             </table>
         </div>
+        <asp:LinkButton ID="lbReturn" runat="server" OnClick="lbReturn_Click">Menu Principal</asp:LinkButton>
     </form>
 </body>
 </html>
