@@ -31,18 +31,34 @@ namespace TP_2_Programacion_3.Ejercicios
         protected void botonCalcularPrecio_Click(object sender, EventArgs e)
         {
             int costoMemoria = (int)Enum.Parse(typeof(PrecioMemoria), DropDownList1.SelectedValue);
-            decimal totalAccesorios = 0;
+            float totalAccesorios = 0;
 
             foreach (ListItem item in checkBoxAccesorios.Items)
             {
                 if (item.Selected)
                 {
-                    totalAccesorios += decimal.Parse(item.Value);
+                    totalAccesorios += float.Parse(item.Value);
                 }
             }
 
-            decimal total = costoMemoria + totalAccesorios;
-            lblCosto.Text = "El precio final es de: $" + total.ToString();
+            float total = costoMemoria + totalAccesorios;
+            float[] intereses = {0.0f,0.15f,0.30f,0.45f};
+            float interesSeleccionado = intereses[DropDownListCuotas.SelectedIndex];
+            float totalConInteres = total + (total * interesSeleccionado);
+            int cantidadCuotas = int.Parse(DropDownListCuotas.SelectedValue);
+            float cuota = total / cantidadCuotas;
+
+            lblCosto.Text = "El precio final es de: $" + totalConInteres.ToString();
+
+            if (cantidadCuotas != 1)
+            {
+                LabelMensajeCuotas.Visible = true;
+                LabelMensajeCuotas.Text = cantidadCuotas + " cuotas de $" + cuota.ToString("F2");
+            }
+            else
+            {   
+                LabelMensajeCuotas.Visible = false;
+            }
         }
     }
 }
