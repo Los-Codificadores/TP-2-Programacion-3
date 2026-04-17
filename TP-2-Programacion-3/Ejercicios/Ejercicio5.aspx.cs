@@ -26,8 +26,23 @@ namespace TP_2_Programacion_3.Ejercicios
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CostoMemoria = (int)Enum.Parse(typeof(PrecioMemoria), DropDownList1.SelectedValue);
-            lblCosto.Text = "El precio final es de: $" + CostoMemoria.ToString();
+        }
+
+        protected void botonCalcularPrecio_Click(object sender, EventArgs e)
+        {
+            int costoMemoria = (int)Enum.Parse(typeof(PrecioMemoria), DropDownList1.SelectedValue);
+            decimal totalAccesorios = 0;
+
+            foreach (ListItem item in checkBoxAccesorios.Items)
+            {
+                if (item.Selected)
+                {
+                    totalAccesorios += decimal.Parse(item.Value);
+                }
+            }
+
+            decimal total = costoMemoria + totalAccesorios;
+            lblCosto.Text = "El precio final es de: $" + total.ToString();
         }
     }
 }

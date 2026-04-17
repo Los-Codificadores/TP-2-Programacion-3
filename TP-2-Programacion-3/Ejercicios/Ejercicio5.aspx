@@ -29,7 +29,7 @@
         </tr>
         <tr>
             <td class="auto-style2">
-                <asp:DropDownList ID="DropDownList1" AutoPostBack="true" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                <asp:DropDownList ID="DropDownList1" AutoPostBack="false" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                     <asp:ListItem Value="Memoria2GB">2GB</asp:ListItem>
                     <asp:ListItem Value="Memoria4GB">4GB</asp:ListItem>
                     <asp:ListItem Value="Memoria6GB">6GB</asp:ListItem>
@@ -57,7 +57,9 @@
             <td class="auto-style1">&nbsp;</td>
         </tr>
                 <tr>
-            <td class="auto-style1">&nbsp;</td>
+            <td class="auto-style1">
+                <asp:Button ID="botonCalcularPrecio" runat="server" CssClass="auto-style1" OnClick="botonCalcularPrecio_Click" Text="Calcular Precio" />
+                    </td>
         </tr>
                 <tr>
             <td class="auto-style1">
