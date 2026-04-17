@@ -41,7 +41,7 @@ namespace TP_2_Programacion_3.Ejercicios
         {   
             bool esUsuarioValido = validarCampoDeTexto(usuarioInput.Value, LabelMensajeUsuario, "* El nombre de usuario no puede estar vacío.");
             bool esPasswordValido = validarCampoDeTexto(passwordInput.Value, LabelMensajePassword, "* La contraseña no puede estar vacía.");
-            string patronRegex = @"^(?=.*[a-zA-Z])(?=.*[A-Z])(?=.*\d)\S{8,}$";
+            string patronRegex = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)\S{8,}$";
 
             if (!esUsuarioValido || !esPasswordValido)
             {
