@@ -60,6 +60,15 @@ namespace TP_2_Programacion_3.Ejercicios
         protected global::System.Web.UI.WebControls.CheckBoxList checkBoxAccesorios;
 
         /// <summary>
+        /// Control DropDownListMetodo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListMetodo;
+
+        /// <summary>
         /// Control LabelCantidadCuotas.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,15 @@ namespace TP_2_Programacion_3.Ejercicios
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button botonCalcularPrecio;
+
+        /// <summary>
+        /// Control LabelMensajeMetodoPago.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelMensajeMetodoPago;
 
         /// <summary>
         /// Control LabelMensajeCuotas.
