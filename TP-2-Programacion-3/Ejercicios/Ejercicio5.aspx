@@ -10,6 +10,10 @@
         .auto-style1 {
             width: 197px;
         }
+        .auto-style2 {
+            width: 197px;
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -17,14 +21,14 @@
     <table style="width:39%; height: 342px;">
         <tr>
             <td class="auto-style1">
-                <asp:Label ID="Label1" runat="server" Text="Elija su configuracion:"></asp:Label>
+                <asp:Label ID="labelConfiguracion" runat="server" Text="Elija su configuracion:"></asp:Label>
             </td>
         </tr>
         <tr>
             <td class="auto-style1">Seleccione cantidad de memoria:</td>
         </tr>
         <tr>
-            <td class="auto-style1">
+            <td class="auto-style2">
                 <asp:DropDownList ID="DropDownList1" AutoPostBack="true" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                     <asp:ListItem Value="Memoria2GB">2GB</asp:ListItem>
                     <asp:ListItem Value="Memoria4GB">4GB</asp:ListItem>
@@ -33,10 +37,18 @@
             </td>
         </tr>
                 <tr>
-            <td class="auto-style1">&nbsp;</td>
+            <td class="auto-style1">
+                <asp:Label ID="labelAccesorios" runat="server" Text="Seleccione Accesorios:"></asp:Label>
+                    </td>
         </tr>
                 <tr>
-            <td class="auto-style1">&nbsp;</td>
+            <td class="auto-style1">
+                <asp:CheckBoxList ID="checkBoxAccesorios" runat="server">
+                    <asp:ListItem Value="2000,50">MonitorLCD</asp:ListItem>
+                    <asp:ListItem Value="550,50">HD 500GB</asp:ListItem>
+                    <asp:ListItem Value="1200">Grabador DVD</asp:ListItem>
+                </asp:CheckBoxList>
+                    </td>
         </tr>
                 <tr>
             <td class="auto-style1">&nbsp;</td>

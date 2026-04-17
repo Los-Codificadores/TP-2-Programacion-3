@@ -26,7 +26,7 @@ namespace TP_2_Programacion_3.Ejercicios
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CostoMemoria = (int)Enum.Parse(typeof(PrecioMemoria), DropDownList1.SelectedValue); 
+            CostoMemoria = (int)Enum.Parse(typeof(PrecioMemoria), DropDownList1.SelectedValue);
             lblCosto.Text = "El precio final es de: $" + CostoMemoria.ToString();
         }
     }
