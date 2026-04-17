@@ -60,6 +60,24 @@ namespace TP_2_Programacion_3.Ejercicios
         protected global::System.Web.UI.WebControls.CheckBoxList checkBoxAccesorios;
 
         /// <summary>
+        /// Control LabelCantidadCuotas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelCantidadCuotas;
+
+        /// <summary>
+        /// Control DropDownListCuotas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListCuotas;
+
+        /// <summary>
         /// Control botonCalcularPrecio.
         /// </summary>
         /// <remarks>
@@ -67,6 +85,15 @@ namespace TP_2_Programacion_3.Ejercicios
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button botonCalcularPrecio;
+
+        /// <summary>
+        /// Control LabelMensajeCuotas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelMensajeCuotas;
 
         /// <summary>
         /// Control lblCosto.

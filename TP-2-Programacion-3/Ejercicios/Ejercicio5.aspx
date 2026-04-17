@@ -54,11 +54,24 @@
             <td class="auto-style1">&nbsp;</td>
         </tr>
                 <tr>
-            <td class="auto-style1">&nbsp;</td>
+            <td class="auto-style1">
+                <asp:Label ID="LabelCantidadCuotas" runat="server" Text="Cuotas"></asp:Label>
+                <asp:DropDownList ID="DropDownListCuotas" runat="server">
+                    <asp:ListItem Value="1">1</asp:ListItem>
+                    <asp:ListItem Value="3">3</asp:ListItem>
+                    <asp:ListItem Value="6">6</asp:ListItem>
+                    <asp:ListItem Value="12">12</asp:ListItem>
+                </asp:DropDownList>
+                    </td>
         </tr>
                 <tr>
             <td class="auto-style1">
-                <asp:Button ID="botonCalcularPrecio" runat="server" CssClass="auto-style1" OnClick="botonCalcularPrecio_Click" Text="Calcular Precio" />
+                <asp:Button ID="botonCalcularPrecio" runat="server" CssClass="auto-style1" OnClick="botonCalcularPrecio_Click" Text="Calcular Precio Final" />
+                    </td>
+        </tr>
+                <tr>
+            <td class="auto-style1">
+                <asp:Label ID="LabelMensajeCuotas" visible="false" runat="server"></asp:Label>
                     </td>
         </tr>
                 <tr>
