@@ -13,11 +13,6 @@ namespace TP_2_Programacion_3.Ejercicios
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (IsPostBack)
-            {
-                InputPass.Attributes["value"] = Request.Form[InputPass.UniqueID];
-            }
-
             Datos.CargarDatosDePrueba();
             CampoErrores.InnerText = "";
         }
@@ -55,7 +50,6 @@ namespace TP_2_Programacion_3.Ejercicios
                 //CampoErrores.InnerText = "Usuario o contraseña invalidos";
                 Response.Redirect("Ejercicio4_invalido.aspx");
             }
-            return;
         }
 
         protected void lbReturn_Click(object sender, EventArgs e)

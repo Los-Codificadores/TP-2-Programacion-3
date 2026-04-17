@@ -33,5 +33,10 @@ namespace TP_2_Programacion_3
         {
             Response.Redirect("Ejercicios/Ejercicio4_login.aspx");
         }
+
+        protected void LinkButtonEjercicio5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicios/Ejercicio5.aspx");
+        }
     }
 }
