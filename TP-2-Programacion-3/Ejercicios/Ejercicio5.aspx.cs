@@ -66,7 +66,8 @@ namespace TP_2_Programacion_3.Ejercicios
             int cantidadCuotas = int.Parse(DropDownListCuotas.SelectedValue);
             float cuota = total / cantidadCuotas;
 
-            LabelMensajeMetodoPago.Text = "Ajuste por metodo de pago: " + (efectoMetodoPago >= 0 ? (efectoMetodoPago * 100).ToString() + "% de interes." : (-efectoMetodoPago * 100).ToString() + "% de descuento.");
+            LabelMensajeMetodoPago.Text = "Ajuste por metodo de pago: " + 
+                (efectoMetodoPago >= 0 ? (efectoMetodoPago * 100).ToString() + "% de interes." : (-efectoMetodoPago * 100).ToString() + "% de descuento.");
             lblCosto.Text = "El precio final es de: $" + totalConInteres.ToString();
 
             if (cantidadCuotas != 1 && DropDownListMetodo.SelectedValue == "Credito")
